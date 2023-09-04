@@ -4,7 +4,7 @@ Este proyecto es un clon de Cuevana 8, pero solo para fines de demostración. No
 
 ## Capturas de Pantalla
 
-![Captura de Pantalla](ruta/a/tu/imagen.png)
+![Captura de Pantalla](src/assets/browser-image-shots.png)
 
 ## Características
 
