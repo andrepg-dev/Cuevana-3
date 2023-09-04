@@ -1,0 +1,21 @@
+@keyframes pop {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.04);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.link:hover .elul {
+  animation: pop ease-in-out;
+  animation-duration: 0.2s;
+  animation-fill-mode: forwards;
+}
+
+.elul {
+  transform: scale(0);
+}
