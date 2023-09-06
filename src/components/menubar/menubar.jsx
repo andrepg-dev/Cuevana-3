@@ -28,16 +28,16 @@ export const MenuBarComponent = ({ className }) => {
   return (
     <>
       <menu
-        className={`flex text-white w-full py-[1.2rem] justify-between items-center absolute z-40 px-sitex ${className} ${MenuBarClass}`}
+        className={`flex text-white w-full py-[1.2rem] justify-between items-center absolute z-40 px-20 lg:px-sitex ${className} ${MenuBarClass}`}
       >
-        <div className="flex gap-12">
+        <div className="gap-12 flex">
           <img
             src="	https://cuevana8.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fcuevana8.24457267.png&w=256&q=75"
             alt="Home image"
             className="w-52 object-cover"
           />
 
-          <div className="relative">
+          <div className="relative xl:block hidden">
             <ul className="flex h-full items-center gap-8 text-sm">
               <ListItems text={'Inicio'} route="" showIcon={false} />
               <ListItems

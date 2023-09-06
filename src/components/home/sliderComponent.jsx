@@ -29,7 +29,7 @@ export default function SliderComponent({ className }) {
       {movies.slice(0, 5).map((movie) => (
         <div className="h-full w-full" key={movie.id}>
           <div
-            className={`w-full h-full px-sitex relative ${className}`}
+            className={`w-full h-full px-20 lg:px-sitex relative ${className}`}
             style={{
               boxShadow:
                 '0px -10px 10px 0px #080F28 inset, 0px -220px 500px 10px #080F28 inset, 0px 30px 80px 0px #080F28 inset',
@@ -46,10 +46,9 @@ export default function SliderComponent({ className }) {
               alt="Home page image"
             />
 
-            <div className="pt-32">
+            <div className="lg:pt-32 pt-36">
               <MovieContentHomePage
                 overview={movie.overview}
-                duration={'1h 33 min'}
                 release_date={movie.release_date}
                 type={'Película'}
                 id={movie.id}

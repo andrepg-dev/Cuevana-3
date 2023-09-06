@@ -4,7 +4,7 @@ export const ToolTip = ({ title, vote_average, release_date, overview, poster_pa
   return (
     <>
       <div
-        className={`w-80 rounded p-4 cursor-default relative backdrop-blur-[200px] transition-all`}
+        className={`w-80 lg:block hidden rounded p-4 cursor-default relative backdrop-blur-[200px] transition-all`}
       >
         <div
           className="absolute inset-0 w-full h-full backdrop-blur-3xl"

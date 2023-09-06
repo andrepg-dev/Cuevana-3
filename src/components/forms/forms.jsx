@@ -12,7 +12,7 @@ export const SearchForm = ({ placeholder }) => {
   };
 
   return (
-    <div className="relative">
+    <div className={'relative xl:block hidden'}>
       <form onSubmit={handleSubmit(handleSubmitFunction)} className="flex items-center">
         <input
           type="text"

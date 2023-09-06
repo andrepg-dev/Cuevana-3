@@ -20,7 +20,7 @@ export const Series = () => {
 
   return (
     <>
-      <header className="flex justify-between items-center ">
+      <header className="flex justify-between items-center mb-8">
         <h1 className="text-4xl font-bold">Episodios</h1>
         <a
           href=""
@@ -30,12 +30,20 @@ export const Series = () => {
         </a>
       </header>
 
-      <div className="grid grid-cols-4 gap-4 mt-8">
+      <div
+        className="grid gap-4"
+        style={{ gridTemplateColumns: 'repeat( auto-fill, minmax(160px, 1fr) )' }}
+      >
         {series
           .sort((a, b) => b.vote_average - a.vote_average)
           .slice(0, 8)
           .map((serie) => (
-            <SerieCard name={serie.name} poster_path={serie.poster_path} vote_average={serie.vote_average} key={serie.id} />
+            <SerieCard
+              name={serie.name}
+              poster_path={serie.poster_path}
+              vote_average={serie.vote_average}
+              key={serie.id}
+            />
           ))}
       </div>
     </>

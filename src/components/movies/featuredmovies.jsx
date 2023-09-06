@@ -16,7 +16,7 @@ export const FeaturedMovies = ({ className }) => {
     return (
       <>
         <img
-          className="w-full object-cover"
+          className="w-full object-cover lg:block hidden"
           src="https://cuevana8.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fcuevana8-banner.a7f84898.jpg&w=384&q=75"
           alt="cuevana logo image"
         />
@@ -96,7 +96,7 @@ export const FeaturedMovies = ({ className }) => {
       <aside className={className}>
         {pathLocationHome && <ImageComponent />}
 
-        <h1 className="text-xl font-bold">Películas destacadas</h1>
+        <h1 className="lg:text-xl font-bold text-2xl">Películas destacadas</h1>
 
         {/* Botones Día Y semana */}
         <div className="flex [&>button]:w-full [&>button]:p-2 [&>button]:py-3">

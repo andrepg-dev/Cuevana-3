@@ -26,13 +26,13 @@ function Home() {
     <>
       <HomePageImage className={'w-full box-border h-[70vh] px-sitex relative'} />
 
-      <main className="px-sitex bg-primary p-4 text-gray-400">
+      <main className="px-20 lg:px-sitex bg-primary p-4 text-gray-400">
         <h1 className="text-2xl font-bold text-center">
           Todas las películas de cuevana 8 online Gratis
         </h1>
 
-        <section className="mt-10 flex gap-8">
-          <article className="w-[70%]">
+        <section className="mt-10 flex lg:flex-row flex-col gap-8">
+          <article className="lg:w-[70%] w-[100%]">
             {/* Series y episodios */}
             <Series />
             {/* Movies */}
@@ -43,7 +43,7 @@ function Home() {
             </footer>
           </article>
 
-          <FeaturedMovies className={'max-w-[30%] flex flex-col gap-4'} />
+          <FeaturedMovies className={'w-[100%] lg:max-w-[30%] flex flex-col gap-4'} />
         </section>
       </main>
     </>

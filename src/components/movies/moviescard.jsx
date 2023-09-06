@@ -20,7 +20,7 @@ export const MoviesCard = ({ title, poster_path, release_date, overview, vote_av
               'https://www.themoviedb.org/assets/2/v4/glyphicons/basic/glyphicons-basic-38-picture-grey-c2ebdbb057f2a7614185931650f8cee23fa137b93812ccb132b9df511df1cfac.svg';
           }}
         />
-|
+
         <div className="absolute h-full w-full items-center justify-center flex scale-0 transition duration-75">
           <PlayIcon />
         </div>

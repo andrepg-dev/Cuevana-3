@@ -4,7 +4,7 @@ import SliderComponent from './sliderComponent';
 export const HomePageImage = () => {
   return (
     <>
-      <section className="w-full box-border h-[75vh] object-cover relative ">
+      <section className="w-full box-border lg:h-[75vh] h-[80vh] object-cover relative ">
         <SliderComponent />
       </section>
     </>

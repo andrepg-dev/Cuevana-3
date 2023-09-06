@@ -13,7 +13,7 @@ export function MovieContentHomePage({
     <>
       <header className="h-20 flex items-center">
         <Link to={`/pelicula/${id}`} className="hover:scale-x-105">
-          <div className="font-bold text-white text-5xl">
+          <div className="font-bold text-white text-5xl lg:pb-0 pb-8">
             {title}
             <span className="align-middle text-[10px] text-black ml-4  bg-yellow-400 rounded-full px-2">
               {type}

@@ -59,20 +59,20 @@ export const SelectedMovie = () => {
   return (
     <>
       <div
-        className="h-full w-full absolute"
+        className=" h-full w-full absolute"
         style={{
           backgroundImage: `url(https://image.tmdb.org/t/p/w1280/${movie.backdrop_path})`,
           boxShadow: '0px 0px 500px 200px #080f28 inset, 0px 15px 100px 1px #080F28 inset',
           backgroundSize: 'cover',
         }}
       ></div>
-
+      
       <article
-        className="relative flex gap-8 pt-32 px-sitex min-h-screen h-full text-white z-10"
+        className="relative flex gap-8 pt-32 px-20 lg:px-sitex min-h-screen h-full text-white z-10"
         // add bottom shadow
       >
         {/* Container */}
-        <div className="w-full relative pb-36 ">
+        <div className="w-full relative">
           {/* Video details */}
           <header className="flex gap-8">
             {/* image poster */}
@@ -172,7 +172,7 @@ export const SelectedMovie = () => {
 
           {/* Video */}
           <section className="w-full h-[100vh] bg-[#222e5b] mt-12 flex flex-col">
-            <header className="h-20 flex gap-2 p-3 items-center">
+            <header className="lg:flex-row lg:h-20 flex flex-col gap-2 p-3 lg:items-center">
               {OPTIONS.map((option, index) => {
                 const { language, svgIcon, ArrowDownIconBol = true } = option;
                 return (
@@ -192,14 +192,14 @@ export const SelectedMovie = () => {
             </div>
           </section>
 
-          <section className=" flex gap-8 bg-primary pt-20 text-gray-400 ">
-            <article className="w-[70%]">
+          <section className="flex lg:flex-row flex-col gap-8 bg-primary pt-20 text-gray-400 ">
+            <article className="lg:w-[70%] w-full">
               <h1 className="h2 font-bold text-4xl text-white">Películas recomendadas</h1>
               {/* Movies */}
               <HomeMoviesComponent movies={recomendations} />
             </article>
 
-            <FeaturedMovies className={'max-w-[30%] flex flex-col gap-4'} />
+            <FeaturedMovies className={'max-full lg:max-w-[30%] flex flex-col gap-4'} />
           </section>
         </div>
       </article>

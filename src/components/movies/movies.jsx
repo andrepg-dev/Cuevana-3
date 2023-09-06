@@ -37,8 +37,8 @@ export const Movies = () => {
 
   return (
     <>
-      <section className=" flex gap-8 bg-primary pt-36 px-sitex text-gray-400">
-        <article className="w-[70%]">
+      <section className=" flex gap-8 bg-primary pt-36 lg:px-sitex px-20 text-gray-400">
+        <article className="w-[100%] lg:w-[70%]">
           <h1 className="h2 font-bold text-4xl text-white">Últimas películas publicadas</h1>
 
           {/* Movies */}
@@ -55,7 +55,7 @@ export const Movies = () => {
           </footer>
         </article>
 
-        <FeaturedMovies className={'max-w-[30%] flex flex-col gap-4'} />
+        <FeaturedMovies className={'lg:max-w-[30%] lg:flex hidden flex-col gap-4 '} />
       </section>
     </>
   );
