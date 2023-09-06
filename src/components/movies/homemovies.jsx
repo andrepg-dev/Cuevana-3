@@ -1,6 +1,6 @@
 import { useLocation } from 'react-router-dom';
 import { HeaderMoviesOptions } from './homemoviesheader';
-import { MoviesCard } from './moviesCard';
+import MoviesCard from './moviescard'
 
 export const HomeMoviesComponent = ({ movies }) => {
   const location = useLocation();

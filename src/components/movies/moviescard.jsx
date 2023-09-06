@@ -3,7 +3,7 @@ import { ToolTip } from './tooltip';
 import { PlayIcon } from '../icons/icons';
 import { Link } from 'react-router-dom';
 
-export const MoviesCard = ({ title, poster_path, release_date, overview, vote_average, id, onClick }) => {
+const MoviesCard = ({ title, poster_path, release_date, overview, vote_average, id, onClick }) => {
   return (
     <Link
       to={`/pelicula/${id}`}
@@ -46,6 +46,8 @@ export const MoviesCard = ({ title, poster_path, release_date, overview, vote_av
     </Link>
   );
 };
+
+export default MoviesCard;
 
 MoviesCard.propTypes = {
   title: propTypes.string,
