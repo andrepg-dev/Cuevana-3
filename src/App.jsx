@@ -7,7 +7,7 @@ function App() {
       <MenuBarComponent />
       <AppRoutes />
       <footer className="w-full p-16 flex justify-center opacity-60 text-center text-sm text-white">
-        Con ❤️ por @andre - 2023
+        Desarrollado por Andre {'</>'}
       </footer>
     </>
   );
