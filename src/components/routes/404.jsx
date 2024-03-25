@@ -8,8 +8,10 @@ export const PageNotFound = () => {
           alt="404 image"
         />
         <h1 className="text-skyblue text-[9rem] font-bold">404</h1>
-        <h2 className="text-3xl text-white font-light">
-          Lo sentimos, no tenemos nada que mostrar.
+        <h2 className="text-2xl text-white font-light">
+          Esta página no está desarrollada
+          <br />
+          Ve hacia el apartado de generos o busca una pelicula
         </h2>
       </section>
     </>

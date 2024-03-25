@@ -187,7 +187,7 @@ export const SelectedMovie = () => {
             </header>
 
             {/* Video */}
-            <div className="w-full h-full bg-black flex items-center justify-center">
+            <div className="w-full h-full bg-black flex items-center justify-center" onClick={() => alert("No reproducimos películas ✖️ solo es una muestra")}>
               <PlayIconFilled width={120} className={'cursor-pointer hover:brightness-75'} />
             </div>
           </section>
